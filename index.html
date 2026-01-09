@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="QuickQR - A modern QR Code Generator for website URLs. Built with love by Yash.">
+    <title>QuickQR - QR Code Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-content">
+            <h1 class="app-title">QuickQR</h1>
+            <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark/light mode">
+                <span class="theme-icon">🌙</span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Main Container -->
+    <main class="container">
+        <!-- Glassmorphic Card -->
+        <section class="card">
+            <!-- Input Section -->
+            <div class="input-section">
+                <label for="urlInput" class="input-label">Enter Your URL</label>
+                <div class="input-wrapper">
+                    <input 
+                        type="url" 
+                        id="urlInput" 
+                        class="url-input" 
+                        placeholder="https://example.com" 
+                        autocomplete="off"
+                        aria-label="URL input field"
+                    >
+                    <span class="input-icon">🔗</span>
+                </div>
+                <div class="error-message" id="errorMessage"></div>
+            </div>
+
+            <!-- QR Code Display Section -->
+            <div class="qr-display-section" id="qrSection" style="display: none;">
+                <div class="qr-container" id="qrContainer"></div>
+                <p class="qr-url-display" id="urlDisplay"></p>
+            </div>
+
+            <!-- Loading Animation -->
+            <div class="loading" id="loading" style="display: none;">
+                <div class="spinner"></div>
+                <p>Generating QR Code...</p>
+            </div>
+
+            <!-- Controls Section -->
+            <div class="controls-section">
+                <div class="primary-controls">
+                    <button class="btn btn-primary" id="generateBtn">
+                        <span>⚡</span> Generate QR
+                    </button>
+                    <button class="btn btn-secondary" id="clearBtn" style="display: none;">
+                        <span>🗑️</span> Clear
+                    </button>
+                </div>
+
+                <div class="secondary-controls">
+                    <div class="size-selector">
+                        <label for="sizeSelect" class="size-label">Size:</label>
+                        <select id="sizeSelect" class="size-select" style="display: none;">
+                            <option value="200">200px</option>
+                            <option value="300" selected>300px</option>
+                            <option value="400">400px</option>
+                        </select>
+                    </div>
+
+                    <button class="btn btn-icon" id="copyUrlBtn" title="Copy URL" style="display: none;">
+                        <span>📋</span> Copy
+                    </button>
+                    <button class="btn btn-icon" id="downloadBtn" title="Download QR Code" style="display: none;">
+                        <span>⬇️</span> Download
+                    </button>
+                </div>
+            </div>
+
+            <!-- History Section -->
+            <div class="history-section" id="historySection" style="display: none;">
+                <h3 class="history-title">📜 Recent URLs</h3>
+                <ul class="history-list" id="historyList"></ul>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p class="footer-text">Scan. Share. Connect.</p>
+        <p class="footer-credit">QuickQR — Built by Yash</p>
+    </footer>
+
+    <!-- QRCode.js Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+    
+    <!-- Main Script -->
+    <script src="script.js"></script>
+</body>
+</html>
