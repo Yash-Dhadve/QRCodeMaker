@@ -4,29 +4,7 @@
    ============================================ */
 
 :root {
-    /* Light Mode Colors */
-    --bg-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    --card-bg: rgba(255, 255, 255, 0.95);
-    --card-border: rgba(255, 255, 255, 0.18);
-    --text-primary: #1a1a2e;
-    --text-secondary: #6c757d;
-    --border-color: #e9ecef;
-    --input-bg: #f8f9fa;
-    --input-border: #dee2e6;
-    --primary-color: #667eea;
-    --primary-hover: #5a67d8;
-    --success-color: #4caf50;
-    --error-color: #f44336;
-    --error-bg: #ffebee;
-    --error-text: #c62828;
-    --shadow: 0 20px 60px rgba(102, 126, 234, 0.2);
-    --shadow-sm: 0 4px 15px rgba(0, 0, 0, 0.1);
-    --backdrop-blur: 20px;
-    --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-/* Dark Mode */
-body.dark-mode {
+    /* Dark Mode Colors */
     --bg-gradient: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
     --card-bg: rgba(30, 30, 46, 0.95);
     --card-border: rgba(255, 255, 255, 0.08);
@@ -39,6 +17,12 @@ body.dark-mode {
     --error-text: #ff6b6b;
     --shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
     --shadow-sm: 0 4px 15px rgba(0, 0, 0, 0.3);
+    --primary-color: #667eea;
+    --primary-hover: #5a67d8;
+    --success-color: #4caf50;
+    --error-color: #f44336;
+    --backdrop-blur: 20px;
+    --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* Global Styles */
