@@ -182,7 +182,7 @@ function handleGenerateQR() {
 
     // Validate URL
     if (!isValidURL(url)) {
-        showError('Please enter a valid URL (e.g., example.com or https://example.com)');
+        showError('Please enter a valid website URL, for example example.com or https://example.com.');
         return;
     }
 

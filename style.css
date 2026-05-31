@@ -490,6 +490,12 @@ body.dark-mode .qr-container {
     margin-bottom: 0.5rem;
 }
 
+.footer-note {
+    font-size: 0.95rem;
+    color: var(--text-secondary);
+    margin-bottom: 0.25rem;
+}
+
 .footer-credit {
     font-size: 0.9rem;
     color: var(--text-secondary);
