@@ -251,9 +251,7 @@ function handleDownload() {
  */
 function showSuccess(message) {
     const successDiv = document.createElement('div');
-    successDiv.className = 'error-message show';
-    successDiv.style.backgroundColor = 'rgba(76, 175, 80, 0.1)';
-    successDiv.style.color = '#2e7d32';
+    successDiv.className = 'success-message show';
     successDiv.textContent = message;
 
     errorMessage.parentElement.insertBefore(successDiv, errorMessage.nextSibling);
