@@ -199,13 +199,15 @@ function handleGenerateQR() {
  * Handle Size Change
  */
 function handleSizeChange() {
-    currentQRSize = parseInt(sizeSelect.value);
+    currentQRSize = parseInt(sizeSelect.value, 10);
 
-    // Regenerate QR code with new size if one exists
-    if (currentQRUrl) {
-        qrContainer.innerHTML = '';
-        generateQRCode(currentQRUrl);
+    // Regenerate QR code only when one already exists
+    if (!currentQRUrl) {
+        return;
     }
+
+    qrContainer.innerHTML = '';
+    generateQRCode(currentQRUrl);
 }
 
 // ============================================
