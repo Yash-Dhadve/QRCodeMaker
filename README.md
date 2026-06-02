@@ -41,7 +41,7 @@ QRCodeMaker/
 - **HTML5** - Semantic markup
 - **CSS3** - Glassmorphism, gradients, animations
 - **Vanilla JavaScript** - No frameworks, pure JS
-- **QRCode.js** - QR code generation library (CDN)
+- **QRCode.js** - QR code generation library (CDN, version 1.0.0)
 
 ## 🚀 Getting Started
 
